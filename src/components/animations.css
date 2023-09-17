@@ -1,0 +1,87 @@
+@keyframes wall{
+    0%{
+        transform: scale(0.1);
+        background-color: aqua; 
+        border-radius: 50%;
+    }
+    50%{
+        transform: scale(0.6);
+        background-color: blue;
+        border-radius: 50%;
+    }
+    75%{
+        background-color: purple
+    }
+    100%{
+        transform: scale(1);
+        background-color: #341c02;
+    }
+}
+
+.wallAnimation{
+    animation-name: wall;
+    animation-duration: 0.4s;
+    animation-timing-function: ease-out;
+    animation-fill-mode: forwards;
+    border-color: #341c02 !important;
+}
+
+
+@keyframes visitedCells{
+    0%{
+        transform: scale(0.3);
+        background-color: purple; 
+        border-radius: 50%;
+    }
+    50%{
+        transform: scale(0.8);
+        background-color: aqua;
+        border-radius: 50%;
+    }
+    100%{
+        transform: scale(1);
+        background-color: #1e88e5;
+    }
+}
+
+.visitedCellsAimation{
+    animation-name: visitedCells;
+    animation-duration: 0.8s;
+    animation-timing-function: ease-out;
+    animation-fill-mode: forwards;
+}
+
+
+@keyframes startOrEndCell {
+    0%{
+        transform: scale(0.5);
+        border-radius: 15%;
+    }
+    50%{
+        transform: scale(1.3);
+        border-radius: 15%;
+    }
+    100%{
+        transform: scale(1);
+    }
+}
+
+.startEndAnimation{
+    animation-name: startOrEndCell;
+    animation-duration: 0.8s;
+    animation-timing-function: ease-out;
+}
+.shortPathAnimation{
+    animation-name: startOrEndCell;
+    animation-duration: 0.8s;
+    animation-timing-function: ease-out;
+    background-color: greenyellow;
+}
+
+.startCell {
+    background-color: orange; 
+}
+
+.endCell {
+    background-color: blue;
+}
